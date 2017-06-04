@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Cat Trivial Trivia Game</title>
+</head>
+<body>
+<h1>Cat Trivial Trivia</h1>
+	<!--game board-->
+	<div id="container" class="grey"></div>
+	<!--stop watch-->
+	Time remaining (seconds):<div id="timer" class="clock">00:30</div>
+
+<!--show quiz and start count down button-->
+<input type="button" id="start" value="START" class="btn" onclick="show('quizPanel')"  >
+
+<!--hidden until user click START button-->
+<div id="quizPanel" class="hide">
+
+<div id="quiz" class="left"  > 
+
+<p class="bold">1. What do you call a group of cats?</p>
+<input type="radio" id="1a" name="Q1" class="question inline" > Clowder
+<input type="radio" id="1b" name="Q1" class="question inline" > Club
+<input type="radio" id="1c" name="Q1" class="question inline" > Chorus
+<input type="radio" id="1d" name="Q1" class="question inline" > Canary
+
+<p class="bold">2. Which scientist is credited with inventing the cat door?</p>
+<input type="radio" id="2a" name="Q2" class="question inline" > Albert Einstein
+<input type="radio" id="2b" name="Q2" class="question inline" > Issac Newton
+<input type="radio" id="2c" name="Q2" class="question inline" > Marie Curie
+<input type="radio" id="2d" name="Q2" class="question inline" > Charles Darwin
+
+<p class="bold">3. Guess the nationality of the first cat in space:</p>
+<input type="radio" id="3a" name="Q3" class="question inline" > American
+<input type="radio" id="3b" name="Q3" class="question inline" > Russian
+<input type="radio" id="3c" name="Q3" class="question inline" > French
+<input type="radio" id="3d" name="Q3" class="question inline" > British
+
+<p class="bold">4. <em>Cats</em> the musical made its debut on Broadway in which year?</p>
+<input type="radio" id="4a" name="Q4" class="question inline" > 1981
+<input type="radio" id="4b" name="Q4" class="question inline" > 1982
+<input type="radio" id="4c" name="Q4" class="question inline" > 1983
+<input type="radio" id="4d" name="Q4" class="question inline" > 1984
+
+<p class="bold">5. Which US president once remarked that his cat Dixie, "is smarter than my whole cabinet."?</p>
+<input type="radio" id="5a" name="Q5" class="question inline" > Abraham Lincoln
+<input type="radio" id="5b" name="Q5" class="question inline" > John Adams
+<input type="radio" id="5c" name="Q5" class="question inline" > Harry Truman
+<input type="radio" id="5d" name="Q5" class="question inline" > Richard Nixon
+
+<p class="bold">6. What breed is this cat?</p>
+<input type="radio" id="6a" name="Q6" class="question inline" > Siamese
+<input type="radio" id="6b" name="Q6" class="question inline" > Persian
+<input type="radio" id="6c" name="Q6" class="question inline" > Puss in Boots
+<input type="radio" id="6d" name="Q6" class="question inline" > Ragdoll
+<img src="assets/images/ragdoll.jpg">
+
+</div>
+
+<button id="submit" value="DONE" class="btn clear" onclick="checkAnswers()">DONE!</button>
+</div><!--quizPanel ends-->
+
+<!--container ends-->
+</div>
+
+<!--show results-->
+<div id="feedback"></div>
+ 
+</body>
+<!-- jQuery and js -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/javascript/trivia.js"></script>
+
+</html>
